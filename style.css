@@ -29,6 +29,17 @@ and Blueprint http://www.blueprintcss.org/
 	font-weight: 400;
 }
 
+a {
+	color: #707070;
+	text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+	color: #707070;
+	text-decoration: underline;
+} 
+
+
 .container {
 	max-width: 760px;
 	width: 100%;
