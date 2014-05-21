@@ -8,17 +8,10 @@
  */
 ?>
 
-	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'beans' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'beans' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'beans' ), 'beans', '<a href="http://mattjared.co/showyourwork" rel="designer">Matt Jared</a>' ); ?>
-		</div><!-- .site-info -->
+	</div>
+	<footer class="container">
+		<h3>You've been reading the Blacklist blog.</h3>
 	</footer><!-- #colophon -->
-</div><!-- #page -->
-TEST IS HERE!
 <?php wp_footer(); ?>
 
 </body>
