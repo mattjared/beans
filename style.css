@@ -22,8 +22,41 @@ along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normali
 and Blueprint http://www.blueprintcss.org/
 */
 
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: 400;
+}
+
 .container {
 	max-width: 760px;
 	width: 100%;
 	margin: 0 auto;
+}
+
+.entry-title {
+	font-size: 1.5em;
+	margin: 20px 0 10px 0;
+}
+
+.entry-meta {
+	margin-bottom: 20px;
+	font-size: .9em;
+}
+
+.entry-content {
+	font-size: .9em;
+}
+
+footer {
+	background-color: black;
+	margin-top: 20px;
+}
+
+footer h3 {
+	color: white;
+	font-size: .8em;
+	padding: 10px 0;
+	text-align: center;
 }

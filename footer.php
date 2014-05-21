@@ -9,8 +9,10 @@
 ?>
 
 	</div>
-	<footer class="container">
-		<h3>You've been reading the Blacklist blog.</h3>
+	<footer>
+		<div class="container">
+			<h3>You've been reading the Blacklist blog.</h3>
+		</div>
 	</footer><!-- #colophon -->
 <?php wp_footer(); ?>
 
