@@ -18,7 +18,7 @@
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
-TEST IS NOT HERE!
+TEST IS HERE!
 <?php wp_footer(); ?>
 
 </body>

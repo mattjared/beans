@@ -1,5 +1,1 @@
-BEANS THEME
-
----
-
-New theme for beans
+Test doc 
