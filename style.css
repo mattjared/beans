@@ -33,6 +33,16 @@ and Blueprint http://www.blueprintcss.org/
 	max-width: 760px;
 	width: 100%;
 	margin: 0 auto;
+	overflow: hidden;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.post-1 {
+	margin-top: -50px;
 }
 
 .entry-title {
@@ -65,8 +75,8 @@ footer h3 {
 	text-align: center;
 }
 
-/*@media all and (max-width: 768px) {
+@media all and (max-width: 768px) {
 	.container {
 		padding: 0 3px;
 	}
-}*/
+}
