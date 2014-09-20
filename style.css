@@ -9,23 +9,40 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: beans
 Domain Path: /languages/
-Tags:
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
- beans is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
-
-Resetting and rebuilding styles have been helped along thanks to the fine work of
-Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
-along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
-and Blueprint http://www.blueprintcss.org/
+Tags: single column, whitebg, 
 */
+
+/*GRID*/ 
+
+div, footer, header {
+	display: block;	
+}
+
+.half, .quarter, .three-quarter, .full {
+	position: relative;
+}
+
+.half {
+	width: 50%;
+}
+
+.quarter {
+	width: 25%;
+}
+
+.three-quarter {
+	width: 75%;
+}
+
+.full {
+	width: 100%;
+}
+
+/*CUSTOM RESET*/
 
 * {
 	padding: 0;
 	margin: 0;
-	font-family: Verdana, Geneva, sans-serif;
 	font-weight: 400;
 }
 
@@ -39,6 +56,22 @@ a:hover, a:active, a:focus {
 	text-decoration: underline;
 } 
 
+h1, h2, h3, h4, h5, h6 { 
+	font-family: 'Dosis', sans-serif;
+	font-size: 1.1em;
+	font-weight: 400;
+}
+
+body, button, input, select, textarea {
+	font-family: 'Cantarell', sans-serif;
+	font-weight: 400;
+	font-size: 1.3em;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
 
 .container {
 	max-width: 760px;
@@ -47,14 +80,55 @@ a:hover, a:active, a:focus {
 	overflow: hidden;
 }
 
-img {
-	max-width: 100%;
-	height: auto;
+/*HEADER*/
+
+.site-brand {
+	background-color: #34495E;
 }
 
-.post-1 {
-	margin-top: -50px;
+.site-title {
+	text-align: center;
+	display: block;
+	font-size: 5em;
+	margin: 30px auto 15px auto;
+	color: white;
+	text-transform: uppercase;
 }
+
+.site-sub-title {
+	text-align: center;
+	color: white;
+	margin: 0 auto 30px auto;
+
+}
+
+.site-navigation {
+	background-color: rgba(0,0,0,0.3); 
+}
+
+.site-navigation ul {
+	list-style: none;
+}
+
+.site-navigation ul li {
+	float: left;
+	padding: 3%;
+	text-align: center;
+}
+
+.site-navigation ul li:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+
+.site-navigation ul .current_page_item {
+	background-color: rgba(0,0,0,0.1); 
+}
+
+.site-navigation ul li a {
+	color: #ECF0F1;
+}
+
+/*POSTS AND PAGES*/
 
 .entry-title {
 	font-size: 1.5em;
@@ -74,6 +148,8 @@ img {
 	margin-bottom: 10px;
 }
 
+/*POSTS AND PAGES*/
+
 footer {
 	background-color: black;
 	margin-top: 20px;
@@ -86,8 +162,13 @@ footer h3 {
 	text-align: center;
 }
 
+/*PHONES AND STUFF*/
+
 @media all and (max-width: 768px) {
 	.container {
 		padding: 0 3px;
+	}
+	.site-title {
+		font-size: 2em;
 	}
 }
