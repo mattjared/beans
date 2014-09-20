@@ -11,6 +11,9 @@
 	</div>
 	<footer>
 		<div class="container">
+			<?php get_sidebar( 'content' ); ?>
+		</div>
+		<div class="container">
 			<h3>You've been reading the Blacklist blog.</h3>
 		</div>
 	</footer><!-- #colophon -->

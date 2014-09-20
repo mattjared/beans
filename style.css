@@ -66,6 +66,7 @@ body, button, input, select, textarea {
 	font-family: 'Cantarell', sans-serif;
 	font-weight: 400;
 	font-size: 1.3em;
+	color: #22313F;
 }
 
 img {
@@ -74,7 +75,7 @@ img {
 }
 
 .container {
-	max-width: 760px;
+	max-width: 48em;
 	width: 100%;
 	margin: 0 auto;
 	overflow: hidden;
@@ -90,7 +91,7 @@ img {
 	text-align: center;
 	display: block;
 	font-size: 5em;
-	margin: 30px auto 15px auto;
+	margin: 50px auto 35px auto;
 	color: white;
 	text-transform: uppercase;
 }
@@ -98,41 +99,53 @@ img {
 .site-sub-title {
 	text-align: center;
 	color: white;
-	margin: 0 auto 30px auto;
+	margin: 0 auto 50px auto;
 
 }
 
 .site-navigation {
 	background-color: rgba(0,0,0,0.3); 
+	border-bottom: 3px solid rgba(0,0,0,0.5);
 }
 
 .site-navigation ul {
 	list-style: none;
 }
 
-.site-navigation ul li {
+.site-navigation ul li a {
+	color: #ECF0F1;
 	float: left;
 	padding: 3%;
 	text-align: center;
+	border-right: 3px solid rgba(0,0,0,.1);
+	font-size: .7em;
 }
 
-.site-navigation ul li:hover {
+.site-navigation ul li a:hover {
 	background-color: rgba(0,0,0,0.1);
+	text-decoration: none;
 }
 
-.site-navigation ul .current_page_item {
+.site-navigation ul .current_page_item a {
 	background-color: rgba(0,0,0,0.1); 
-}
-
-.site-navigation ul li a {
-	color: #ECF0F1;
 }
 
 /*POSTS AND PAGES*/
 
-.entry-title {
-	font-size: 1.5em;
+.post {
+	padding: 45px 60px;
 	margin: 100px 0 0 0;
+	background-color: #EEEEEE;
+}
+
+.entry-title {
+	text-align: center;
+	font-size: 3em;
+	text-transform: uppercase;
+}
+
+.entry-title a {
+	color: #F89406;
 }
 
 .entry-meta {
@@ -152,7 +165,7 @@ img {
 
 footer {
 	background-color: black;
-	margin-top: 20px;
+	margin-top: 100px;
 }
 
 footer h3 {
@@ -166,9 +179,20 @@ footer h3 {
 
 @media all and (max-width: 768px) {
 	.container {
-		padding: 0 3px;
+		width: 95%;
+		margin: 0 auto;
 	}
 	.site-title {
 		font-size: 2em;
+	}
+	.entry-title {
+		font-size: 1.5em;
+	}
+	.post {
+		padding: 10px;
+		margin-top: 15px;
+	}
+	footer {
+		margin-top: 15px;
 	}
 }

@@ -5,12 +5,10 @@
  * @package beans
  */
 
-/**
- * Set the content width based on the theme's design and stylesheet.
- */
-if ( ! isset( $content_width ) ) {
-	$content_width = 640; /* pixels */
-}
+define( 'THEME_NAME', 'Beans' );
+define( 'THEME_AUTHOR', 'Matt Jared' );
+define( 'THEME_AUTHOR_URI', 'http://mattjared.co/' );
+define( 'THEME_VERSION', '2.0.0' );
 
 if ( ! function_exists( 'beans_setup' ) ) :
 /**
