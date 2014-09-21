@@ -7,17 +7,20 @@
  * @package beans
  */
 ?>
-
 	</div>
 	<footer>
-		<div class="container">
-			<?php get_sidebar( 'content' ); ?>
-		</div>
-		<div class="container">
-			<h3>You've been reading the Blacklist blog.</h3>
+		<?php get_sidebar( 'content' ); ?>
+		<div class="full copyright">
+			<div class="container">
+				<h2><?php bloginfo('name')?> &copy; <?php echo date('Y'); ?></h2>
+			</div>
 		</div>
 	</footer><!-- #colophon -->
 <?php wp_footer(); ?>
-
 </body>
 </html>
+
+
+<!--<?php $site_info = get_bloginfo('description') . ' - ' . get_bloginfo('name') . ' &copy; ' . date('Y'); ?>-->
+
+
