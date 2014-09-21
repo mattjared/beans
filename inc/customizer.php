@@ -17,6 +17,8 @@ function beans_customize_register( $wp_customize ) {
 }
 add_action( 'customize_register', 'beans_customize_register' );
 
+
+
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */

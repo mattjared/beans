@@ -19,8 +19,3 @@
 <?php wp_footer(); ?>
 </body>
 </html>
-
-
-<!--<?php $site_info = get_bloginfo('description') . ' - ' . get_bloginfo('name') . ' &copy; ' . date('Y'); ?>-->
-
-
