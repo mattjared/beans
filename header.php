@@ -18,3 +18,14 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<header class="site-brand full" id="masthead" role="banner">
+		<div class="container">
+			<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+			<h2 class="site-sub-title"><?php bloginfo( 'description' ); ?></h2>
+		</div>
+		<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
+			<div class="container">
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+			</div>
+		</nav>
+	</header>
